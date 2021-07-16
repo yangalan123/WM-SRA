@@ -6,7 +6,7 @@ Due to the ethics concern, we cannot release neither the data nor the checkpoint
 Please cite out paper if you find it helpful.
 
 ```
-@inproceedings{Yang2021weakly,
+@inproceedings{yang2021weakly,
   title={Weakly-Supervised Methods for Suicide Risk Assessment: Role of Related Domains},
   author={Chenghao Yang and Yudong Zhang and Smaranda Muresan},
   booktitle={Proceedings of ACL},
