@@ -1,5 +1,6 @@
 # WM-SRA
 Source code for [Weakly-Supervised Methods for Suicide Risk Assessment: Role of Related Domains (ACL 2021)](https://arxiv.org/abs/2106.02792).
+
 Due to the ethics concern, we cannot release either the data or the checkpoints. Please follow the guideline as stated in [UMD Suicidality Dataset](http://users.umiacs.umd.edu/~resnik/umd_reddit_suicidality_dataset.html) to get related approvals and access for the data. 
 ## Citation
 Please cite out paper if you find it helpful.
@@ -44,6 +45,10 @@ python data_generator.py
 ```
 python main.py --task A
 ```
+## Acknowledgement
+1. We use the pre-processing codes from [hate-speech-and-offensive-language](https://github.com/t-davidson/hate-speech-and-offensive-language)
+1. We use [bert-extractive-summarizer](https://github.com/dmmiller612/bert-extractive-summarizer) to do extractive summarization over the data, which is used in multi-view learning (``K-Sum'' as in our paper).
+
 ## Some painful failure experience
 1. We try to do pseudo-labelling (PL) on the fly, using the model prediction or doing random sampling to decide the labels. We even design a complicated mechanism to use these two strategies at the same time (i.e., with some probability we use the first and otherwise use the second. ) Unfortunately, all these efforts does not work.
 1. We try to do contrastive learning, but it does not work. 
