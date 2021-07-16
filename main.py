@@ -140,7 +140,7 @@ def running(model: BertClassifier, tokenizer, optimizer, data, mode="train", sto
     _flagged_f1_score = f1_score(flagged_labels, flagged_predicts, average="macro")
     _confusion_matrix = confusion_matrix(labels, predictions)
     if store:
-        if arg.predict_test_file:
+        if hasattr(arg, "predict_test_file") and arg.predict_test_file:
             pickle.dump(outputs, open(os.path.join(arg.model_dir_path, "dump_{}.pkl".format(
                 arg.predict_test_file
             )), "wb"))

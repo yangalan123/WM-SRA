@@ -3,7 +3,7 @@ import os
 
 class Args:
     def __init__(self, cmd_args):
-        self.data_root_dir = "../umd_reddit_suicidewatch_dataset_v2/umd_reddit_suicidewatch_dataset_v2/crowd/tasks_{}".format(
+        self.data_root_dir = "./umd_reddit_suicidewatch_dataset_v2/umd_reddit_suicidewatch_dataset_v2/crowd/tasks_{}".format(
             cmd_args.task)
         self.BASE_MODEL = "bert-base-uncased"
         #self.BASE_MODEL = "roberta-base"
@@ -53,7 +53,7 @@ class Args:
             self.trained_model_dir_path = ""
         # whether using pseudo-labelling or not
         self.USE_PL = True
-        self.PL_dir = "../pseudo-labelling"
+        self.PL_dir = "./pseudo-labelling"
         self.PL_filename = "depop_PL.pkl"
 
         self.get_model_dir_path("SuicideModel")
