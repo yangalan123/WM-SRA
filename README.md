@@ -1,7 +1,7 @@
 # WM-SRA
 Source code for [Weakly-Supervised Methods for Suicide Risk Assessment: Role of Related Domains (ACL 2021)](https://arxiv.org/abs/2106.02792).
 
-Due to the ethics concern, we cannot release either the data or the checkpoints. Please follow the guideline as stated in [UMD Suicidality Dataset](http://users.umiacs.umd.edu/~resnik/umd_reddit_suicidality_dataset.html) to get related approvals and access for the data. 
+Due to the ethics concern, we cannot release neither the data nor the checkpoints. Please follow the guideline as stated in [UMD Suicidality Dataset](http://users.umiacs.umd.edu/~resnik/umd_reddit_suicidality_dataset.html) to get related approvals and access for the data. 
 ## Citation
 Please cite out paper if you find it helpful.
 
